@@ -1,0 +1,475 @@
+{
+  "Gün 0": {
+    "jenerasyon_0": 50
+  },
+  "Gün 1": {
+    "jenerasyon_0": 43
+  },
+  "Gün 2": {
+    "jenerasyon_1": 32,
+    "jenerasyon_0": 37
+  },
+  "Gün 3": {
+    "jenerasyon_1": 26,
+    "jenerasyon_0": 22
+  },
+  "Gün 4": {
+    "jenerasyon_2": 12,
+    "jenerasyon_1": 25,
+    "jenerasyon_0": 13
+  },
+  "Gün 5": {
+    "jenerasyon_2": 9,
+    "jenerasyon_1": 14,
+    "jenerasyon_0": 6
+  },
+  "Gün 6": {
+    "jenerasyon_3": 6,
+    "jenerasyon_2": 17,
+    "jenerasyon_1": 16,
+    "jenerasyon_0": 3
+  },
+  "Gün 7": {
+    "jenerasyon_3": 8,
+    "jenerasyon_2": 16,
+    "jenerasyon_1": 7
+  },
+  "Gün 8": {
+    "jenerasyon_4": 5,
+    "jenerasyon_3": 16,
+    "jenerasyon_2": 19,
+    "jenerasyon_1": 6
+  },
+  "Gün 9": {
+    "jenerasyon_3": 15,
+    "jenerasyon_2": 15,
+    "jenerasyon_4": 7,
+    "jenerasyon_1": 4
+  },
+  "Gün 10": {
+    "jenerasyon_3": 20,
+    "jenerasyon_2": 13,
+    "jenerasyon_5": 4,
+    "jenerasyon_4": 10,
+    "jenerasyon_1": 2
+  },
+  "Gün 11": {
+    "jenerasyon_4": 14,
+    "jenerasyon_3": 18,
+    "jenerasyon_5": 6,
+    "jenerasyon_2": 8
+  },
+  "Gün 12": {
+    "jenerasyon_4": 19,
+    "jenerasyon_3": 16,
+    "jenerasyon_6": 3,
+    "jenerasyon_5": 10,
+    "jenerasyon_2": 6
+  },
+  "Gün 13": {
+    "jenerasyon_5": 14,
+    "jenerasyon_4": 16,
+    "jenerasyon_6": 4,
+    "jenerasyon_3": 10,
+    "jenerasyon_2": 4
+  },
+  "Gün 14": {
+    "jenerasyon_5": 20,
+    "jenerasyon_4": 17,
+    "jenerasyon_6": 6,
+    "jenerasyon_3": 8,
+    "jenerasyon_2": 2
+  },
+  "Gün 15": {
+    "jenerasyon_6": 7,
+    "jenerasyon_5": 15,
+    "jenerasyon_4": 17,
+    "jenerasyon_7": 2,
+    "jenerasyon_3": 6,
+    "jenerasyon_2": 2
+  },
+  "Gün 16": {
+    "jenerasyon_6": 12,
+    "jenerasyon_5": 22,
+    "jenerasyon_4": 15,
+    "jenerasyon_7": 6,
+    "jenerasyon_3": 5,
+    "jenerasyon_2": 1
+  },
+  "Gün 17": {
+    "jenerasyon_7": 6,
+    "jenerasyon_6": 10,
+    "jenerasyon_5": 19,
+    "jenerasyon_4": 11,
+    "jenerasyon_3": 5,
+    "jenerasyon_2": 1
+  },
+  "Gün 18": {
+    "jenerasyon_7": 11,
+    "jenerasyon_6": 15,
+    "jenerasyon_5": 18,
+    "jenerasyon_4": 11,
+    "jenerasyon_8": 4,
+    "jenerasyon_3": 3
+  },
+  "Gün 19": {
+    "jenerasyon_6": 16,
+    "jenerasyon_5": 16,
+    "jenerasyon_7": 6,
+    "jenerasyon_4": 6,
+    "jenerasyon_8": 4,
+    "jenerasyon_3": 3
+  },
+  "Gün 20": {
+    "jenerasyon_6": 19,
+    "jenerasyon_5": 12,
+    "jenerasyon_8": 7,
+    "jenerasyon_7": 11,
+    "jenerasyon_9": 3,
+    "jenerasyon_4": 4,
+    "jenerasyon_3": 3
+  },
+  "Gün 21": {
+    "jenerasyon_7": 12,
+    "jenerasyon_6": 18,
+    "jenerasyon_5": 8,
+    "jenerasyon_8": 5,
+    "jenerasyon_9": 3,
+    "jenerasyon_4": 4,
+    "jenerasyon_3": 3
+  },
+  "Gün 22": {
+    "jenerasyon_7": 15,
+    "jenerasyon_6": 12,
+    "jenerasyon_9": 7,
+    "jenerasyon_8": 10,
+    "jenerasyon_10": 2,
+    "jenerasyon_5": 3,
+    "jenerasyon_4": 6,
+    "jenerasyon_3": 3
+  },
+  "Gün 23": {
+    "jenerasyon_7": 16,
+    "jenerasyon_6": 8,
+    "jenerasyon_9": 4,
+    "jenerasyon_8": 9,
+    "jenerasyon_10": 2,
+    "jenerasyon_5": 4,
+    "jenerasyon_4": 5,
+    "jenerasyon_3": 2
+  },
+  "Gün 24": {
+    "jenerasyon_7": 13,
+    "jenerasyon_10": 4,
+    "jenerasyon_9": 7,
+    "jenerasyon_8": 13,
+    "jenerasyon_11": 1,
+    "jenerasyon_6": 5,
+    "jenerasyon_4": 7,
+    "jenerasyon_5": 4,
+    "jenerasyon_3": 2
+  },
+  "Gün 25": {
+    "jenerasyon_8": 15,
+    "jenerasyon_7": 11,
+    "jenerasyon_10": 3,
+    "jenerasyon_9": 8,
+    "jenerasyon_11": 1,
+    "jenerasyon_5": 5,
+    "jenerasyon_4": 7,
+    "jenerasyon_6": 4
+  },
+  "Gün 26": {
+    "jenerasyon_8": 11,
+    "jenerasyon_10": 5,
+    "jenerasyon_9": 12,
+    "jenerasyon_12": 1,
+    "jenerasyon_11": 3,
+    "jenerasyon_7": 5,
+    "jenerasyon_5": 4,
+    "jenerasyon_6": 2,
+    "jenerasyon_4": 3
+  },
+  "Gün 27": {
+    "jenerasyon_9": 13,
+    "jenerasyon_8": 9,
+    "jenerasyon_10": 5,
+    "jenerasyon_12": 1,
+    "jenerasyon_11": 2,
+    "jenerasyon_6": 1,
+    "jenerasyon_5": 5,
+    "jenerasyon_7": 4,
+    "jenerasyon_4": 2
+  },
+  "Gün 28": {
+    "jenerasyon_9": 12,
+    "jenerasyon_10": 11,
+    "jenerasyon_13": 1,
+    "jenerasyon_12": 3,
+    "jenerasyon_11": 3,
+    "jenerasyon_8": 8,
+    "jenerasyon_6": 2,
+    "jenerasyon_7": 4,
+    "jenerasyon_5": 4,
+    "jenerasyon_4": 1
+  },
+  "Gün 29": {
+    "jenerasyon_10": 13,
+    "jenerasyon_9": 6,
+    "jenerasyon_11": 3,
+    "jenerasyon_13": 1,
+    "jenerasyon_12": 2,
+    "jenerasyon_8": 8,
+    "jenerasyon_7": 3,
+    "jenerasyon_6": 3,
+    "jenerasyon_5": 2
+  },
+  "Gün 30": {
+    "jenerasyon_10": 12,
+    "jenerasyon_11": 9,
+    "jenerasyon_14": 1,
+    "jenerasyon_13": 2,
+    "jenerasyon_12": 2,
+    "jenerasyon_9": 6,
+    "jenerasyon_8": 5,
+    "jenerasyon_7": 2,
+    "jenerasyon_6": 3,
+    "jenerasyon_5": 2
+  },
+  "Gün 31": {
+    "jenerasyon_11": 10,
+    "jenerasyon_10": 12,
+    "jenerasyon_12": 3,
+    "jenerasyon_14": 1,
+    "jenerasyon_13": 1,
+    "jenerasyon_9": 6,
+    "jenerasyon_8": 4,
+    "jenerasyon_7": 2,
+    "jenerasyon_6": 4,
+    "jenerasyon_5": 1
+  },
+  "Gün 32": {
+    "jenerasyon_11": 11,
+    "jenerasyon_10": 8,
+    "jenerasyon_12": 7,
+    "jenerasyon_15": 1,
+    "jenerasyon_14": 2,
+    "jenerasyon_13": 2,
+    "jenerasyon_9": 6,
+    "jenerasyon_8": 2,
+    "jenerasyon_7": 2,
+    "jenerasyon_6": 3
+  },
+  "Gün 33": {
+    "jenerasyon_11": 10,
+    "jenerasyon_10": 5,
+    "jenerasyon_13": 3,
+    "jenerasyon_12": 7,
+    "jenerasyon_15": 1,
+    "jenerasyon_14": 1,
+    "jenerasyon_9": 5,
+    "jenerasyon_8": 1,
+    "jenerasyon_7": 2,
+    "jenerasyon_6": 1
+  },
+  "Gün 34": {
+    "jenerasyon_11": 10,
+    "jenerasyon_13": 5,
+    "jenerasyon_12": 9,
+    "jenerasyon_10": 6,
+    "jenerasyon_14": 1,
+    "jenerasyon_9": 4,
+    "jenerasyon_8": 2,
+    "jenerasyon_7": 2
+  },
+  "Gün 35": {
+    "jenerasyon_12": 13,
+    "jenerasyon_11": 11,
+    "jenerasyon_13": 6,
+    "jenerasyon_10": 4,
+    "jenerasyon_15": 1,
+    "jenerasyon_14": 2,
+    "jenerasyon_9": 3,
+    "jenerasyon_8": 2,
+    "jenerasyon_7": 2
+  },
+  "Gün 36": {
+    "jenerasyon_12": 14,
+    "jenerasyon_13": 8,
+    "jenerasyon_11": 10,
+    "jenerasyon_10": 4,
+    "jenerasyon_14": 3,
+    "jenerasyon_9": 2,
+    "jenerasyon_8": 2,
+    "jenerasyon_7": 2
+  },
+  "Gün 37": {
+    "jenerasyon_13": 9,
+    "jenerasyon_12": 14,
+    "jenerasyon_14": 5,
+    "jenerasyon_11": 7,
+    "jenerasyon_10": 3,
+    "jenerasyon_15": 2,
+    "jenerasyon_8": 3,
+    "jenerasyon_7": 1,
+    "jenerasyon_9": 1
+  },
+  "Gün 38": {
+    "jenerasyon_13": 11,
+    "jenerasyon_12": 13,
+    "jenerasyon_14": 6,
+    "jenerasyon_11": 5,
+    "jenerasyon_15": 2,
+    "jenerasyon_10": 2,
+    "jenerasyon_9": 1,
+    "jenerasyon_8": 3,
+    "jenerasyon_7": 1
+  },
+  "Gün 39": {
+    "jenerasyon_13": 8,
+    "jenerasyon_12": 11,
+    "jenerasyon_15": 4,
+    "jenerasyon_14": 6,
+    "jenerasyon_11": 3,
+    "jenerasyon_16": 2,
+    "jenerasyon_10": 2,
+    "jenerasyon_9": 3,
+    "jenerasyon_8": 3
+  },
+  "Gün 40": {
+    "jenerasyon_13": 11,
+    "jenerasyon_15": 3,
+    "jenerasyon_12": 7,
+    "jenerasyon_11": 2,
+    "jenerasyon_10": 2,
+    "jenerasyon_16": 1,
+    "jenerasyon_14": 6,
+    "jenerasyon_9": 3,
+    "jenerasyon_8": 2
+  },
+  "Gün 41": {
+    "jenerasyon_16": 3,
+    "jenerasyon_15": 3,
+    "jenerasyon_13": 11,
+    "jenerasyon_12": 5,
+    "jenerasyon_11": 2,
+    "jenerasyon_17": 1,
+    "jenerasyon_14": 6,
+    "jenerasyon_10": 3,
+    "jenerasyon_9": 4,
+    "jenerasyon_8": 1
+  },
+  "Gün 42": {
+    "jenerasyon_16": 2,
+    "jenerasyon_15": 6,
+    "jenerasyon_13": 11,
+    "jenerasyon_14": 10,
+    "jenerasyon_12": 4,
+    "jenerasyon_11": 1,
+    "jenerasyon_17": 1,
+    "jenerasyon_10": 3,
+    "jenerasyon_9": 2,
+    "jenerasyon_8": 1
+  },
+  "Gün 43": {
+    "jenerasyon_17": 3,
+    "jenerasyon_16": 2,
+    "jenerasyon_11": 3,
+    "jenerasyon_18": 1,
+    "jenerasyon_15": 5,
+    "jenerasyon_13": 7,
+    "jenerasyon_14": 6,
+    "jenerasyon_10": 4,
+    "jenerasyon_9": 2,
+    "jenerasyon_8": 1,
+    "jenerasyon_12": 1
+  },
+  "Gün 44": {
+    "jenerasyon_17": 2,
+    "jenerasyon_12": 2,
+    "jenerasyon_11": 3,
+    "jenerasyon_18": 1,
+    "jenerasyon_16": 5,
+    "jenerasyon_15": 8,
+    "jenerasyon_14": 10,
+    "jenerasyon_13": 6,
+    "jenerasyon_10": 4,
+    "jenerasyon_8": 1,
+    "jenerasyon_9": 1
+  },
+  "Gün 45": {
+    "jenerasyon_18": 2,
+    "jenerasyon_17": 2,
+    "jenerasyon_12": 3,
+    "jenerasyon_19": 1,
+    "jenerasyon_16": 5,
+    "jenerasyon_15": 8,
+    "jenerasyon_14": 11,
+    "jenerasyon_13": 5,
+    "jenerasyon_10": 4,
+    "jenerasyon_11": 4
+  },
+  "Gün 46": {
+    "jenerasyon_18": 1,
+    "jenerasyon_13": 6,
+    "jenerasyon_12": 3,
+    "jenerasyon_19": 1,
+    "jenerasyon_17": 4,
+    "jenerasyon_16": 7,
+    "jenerasyon_15": 8,
+    "jenerasyon_14": 7,
+    "jenerasyon_11": 3,
+    "jenerasyon_10": 1
+  },
+  "Gün 47": {
+    "jenerasyon_18": 1,
+    "jenerasyon_13": 6,
+    "jenerasyon_12": 5,
+    "jenerasyon_20": 1,
+    "jenerasyon_19": 1,
+    "jenerasyon_17": 4,
+    "jenerasyon_16": 5,
+    "jenerasyon_15": 7,
+    "jenerasyon_14": 6,
+    "jenerasyon_11": 3,
+    "jenerasyon_10": 1
+  },
+  "Gün 48": {
+    "jenerasyon_20": 1,
+    "jenerasyon_18": 2,
+    "jenerasyon_17": 5,
+    "jenerasyon_16": 7,
+    "jenerasyon_15": 5,
+    "jenerasyon_14": 7,
+    "jenerasyon_13": 5,
+    "jenerasyon_12": 5,
+    "jenerasyon_11": 2,
+    "jenerasyon_10": 1
+  },
+  "Gün 49": {
+    "jenerasyon_21": 1,
+    "jenerasyon_20": 1,
+    "jenerasyon_18": 3,
+    "jenerasyon_17": 5,
+    "jenerasyon_16": 6,
+    "jenerasyon_15": 6,
+    "jenerasyon_14": 8,
+    "jenerasyon_13": 4,
+    "jenerasyon_12": 3,
+    "jenerasyon_11": 2,
+    "jenerasyon_10": 1
+  },
+  "Gün 50": {
+    "jenerasyon_21": 1,
+    "jenerasyon_20": 1,
+    "jenerasyon_19": 2,
+    "jenerasyon_18": 5,
+    "jenerasyon_17": 7,
+    "jenerasyon_16": 4,
+    "jenerasyon_15": 9,
+    "jenerasyon_14": 8,
+    "jenerasyon_13": 3,
+    "jenerasyon_12": 2,
+    "jenerasyon_11": 2
+  }
+}
