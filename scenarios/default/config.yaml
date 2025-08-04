@@ -1,0 +1,97 @@
+# Varsayılan Senaryo Yapılandırması
+name: "Default"
+description: "Temel evrimsel simülasyon"
+
+# Simülasyon ayarları
+simulation:
+  fps: 60
+  max_organisms: 2000  # 1000'den 2000'e artırıldı
+  world_size: [2000, 2000]
+  performance_mode: "medium"  # low, medium, high
+  debug_mode: false  # Performans izleme aktif/pasif
+
+  # Organizma ayarları
+  organism:
+    initial_count: 50  # Daha az başlangıç popülasyonu
+    mutation_rate: 0.1
+    energy_decay: 0.12  # Daha yüksek enerji tüketimi - GERÇEKÇİ
+    reproduction_threshold: 50.0  # Daha düşük üreme eşiği - dengeli
+
+  # Yiyecek ayarları
+  food:
+    spawn_rate: 0.25  # Daha az yiyecek - GERÇEKÇİ
+    energy_value: 15  # Daha az enerji - GERÇEKÇİ
+    base_decay_rate: 0.002  # Daha hızlı yiyecek bozulması
+  food_types:
+    basic: 0.7
+    premium: 0.2
+    nutritious: 0.1
+
+# Görselleştirme ayarları
+visualization:
+  screen_size: [1200, 800]
+  
+  # Kamera ayarları
+  camera:
+    zoom_sensitivity: 0.15
+    movement_speed: 400.0
+    edge_pan_speed: 300.0
+    edge_pan_threshold: 50
+    drag_sensitivity: 1.0
+    min_zoom: 0.1
+    max_zoom: 10.0
+  
+  # Organizma render ayarları
+  organism:
+    render_style: "genetic"  # genetic, simple, detailed
+    show_auras: true
+    show_genetic_colors: true
+    show_energy_bars: true
+    show_behavior_icons: true
+    aura_opacity: 50
+  
+  # UI ayarları
+  ui:
+    show_hud: true
+    show_organism_labels: true
+    show_debug_overlay: false
+    show_mini_map: true
+    show_organism_details: true
+    label_zoom_threshold: 2.0
+    detailed_label_zoom: 4.0
+  
+  # Biome ayarları
+  biome:
+    enabled: true
+    show_background: true
+    background_zoom_threshold: 2.0
+    biome_resolution: 50
+    color_darkening: 30
+  
+  # Performans ayarları
+  performance:
+    render_throttling: true
+    culling_enabled: true
+    lod_enabled: true
+    surface_caching: true
+
+# Senaryo ayarları
+scenario:
+  duration: 300  # saniye
+  events:
+    - time: 60
+      type: "food_shortage"
+      duration: 30
+      intensity: 0.5
+    - time: 120
+      type: "predator_introduction"
+      duration: 45
+      intensity: 0.3
+    - time: 180
+      type: "environmental_change"
+      duration: 60
+      intensity: 0.7
+    - time: 240
+      type: "world_expansion"
+      direction: "right"
+      amount: 500 

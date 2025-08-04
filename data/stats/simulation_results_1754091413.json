@@ -1,0 +1,89 @@
+{
+  "simulation_info": {
+    "frame_count": 0,
+    "total_time": 0.016666666666666666,
+    "config": {
+      "name": "Default",
+      "description": "Temel evrimsel simülasyon",
+      "simulation": {
+        "fps": 60,
+        "max_organisms": 1000,
+        "world_size": [
+          2000,
+          2000
+        ]
+      },
+      "organism": {
+        "initial_count": 100,
+        "mutation_rate": 0.1,
+        "energy_decay": 0.1,
+        "reproduction_threshold": 50.0
+      },
+      "food": {
+        "spawn_rate": 0.05,
+        "energy_value": 10,
+        "base_decay_rate": 0.0,
+        "food_types": {
+          "basic": 0.7,
+          "premium": 0.2,
+          "nutritious": 0.1
+        }
+      },
+      "visualization": {
+        "screen_size": [
+          1200,
+          800
+        ],
+        "show_energy_bars": true,
+        "show_fps": true
+      },
+      "events": {
+        "population_boom": {
+          "trigger_type": "population",
+          "min_population": 200,
+          "action_type": "modify_environment",
+          "modification_type": "food_spawn_rate",
+          "new_rate": 0.08
+        },
+        "fitness_peak": {
+          "trigger_type": "fitness",
+          "min_fitness": 100,
+          "action_type": "spawn_organisms",
+          "count": 20,
+          "organism_type": "aggressive"
+        },
+        "time_milestone": {
+          "trigger_type": "time",
+          "trigger_time": 60.0,
+          "action_type": "modify_environment",
+          "modification_type": "world_expansion",
+          "direction": "right",
+          "amount": 500
+        }
+      }
+    }
+  },
+  "statistics": {
+    "total_organisms_created": 100,
+    "total_organisms_died": 0,
+    "total_food_spawned": 0,
+    "total_food_eaten": 0,
+    "generation_count": 0,
+    "average_fitness": 0.0,
+    "population_history": [],
+    "fitness_history": []
+  },
+  "world_stats": {
+    "total_organisms": 100,
+    "total_foods": 0,
+    "world_area": 4000000,
+    "chunks_loaded": 16,
+    "organism_density": 2.5e-05,
+    "food_density": 0.0,
+    "active_chunks_count": 16
+  },
+  "performance_stats": {
+    "timers": {},
+    "counters": {}
+  }
+}

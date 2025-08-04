@@ -1,0 +1,228 @@
+{
+  "simulation_info": {
+    "frame_count": 201,
+    "total_time": 3.2846996943155897,
+    "config": {
+      "name": "Default",
+      "description": "Temel evrimsel simülasyon",
+      "simulation": {
+        "fps": 60,
+        "max_organisms": 1000,
+        "world_size": [
+          2000,
+          2000
+        ]
+      },
+      "organism": {
+        "initial_count": 100,
+        "mutation_rate": 0.1,
+        "energy_decay": 0.1,
+        "reproduction_threshold": 50.0
+      },
+      "food": {
+        "spawn_rate": 0.05,
+        "energy_value": 10,
+        "base_decay_rate": 0.0,
+        "food_types": {
+          "basic": 0.7,
+          "premium": 0.2,
+          "nutritious": 0.1
+        }
+      },
+      "visualization": {
+        "screen_size": [
+          1200,
+          800
+        ],
+        "show_energy_bars": true,
+        "show_fps": true
+      },
+      "events": {
+        "population_boom": {
+          "trigger_type": "population",
+          "min_population": 200,
+          "action_type": "modify_environment",
+          "modification_type": "food_spawn_rate",
+          "new_rate": 0.08
+        },
+        "fitness_peak": {
+          "trigger_type": "fitness",
+          "min_fitness": 100,
+          "action_type": "spawn_organisms",
+          "count": 20,
+          "organism_type": "aggressive"
+        },
+        "time_milestone": {
+          "trigger_type": "time",
+          "trigger_time": 60.0,
+          "action_type": "modify_environment",
+          "modification_type": "world_expansion",
+          "direction": "right",
+          "amount": 500
+        }
+      }
+    }
+  },
+  "statistics": {
+    "total_organisms_created": 100,
+    "total_organisms_died": 0,
+    "total_food_spawned": 9,
+    "total_food_eaten": 0,
+    "generation_count": 0,
+    "average_fitness": 1.2648609404563897,
+    "population_history": [
+      {
+        "frame": 60,
+        "population": 100,
+        "time": 0.982344881693523
+      },
+      {
+        "frame": 120,
+        "population": 100,
+        "time": 1.9612244923909499
+      },
+      {
+        "frame": 180,
+        "population": 100,
+        "time": 2.9428993384043354
+      }
+    ],
+    "fitness_history": [
+      {
+        "frame": 60,
+        "average_fitness": 1.0884110393524191,
+        "time": 0.982344881693523
+      },
+      {
+        "frame": 120,
+        "average_fitness": 1.176510204315189,
+        "time": 1.9612244923909499
+      },
+      {
+        "frame": 180,
+        "average_fitness": 1.2648609404563897,
+        "time": 2.9428993384043354
+      }
+    ]
+  },
+  "world_stats": {
+    "total_organisms": 100,
+    "total_foods": 9,
+    "world_area": 4000000,
+    "chunks_loaded": 0,
+    "organism_density": 2.5e-05,
+    "food_density": 2.25e-06,
+    "active_chunks_count": 0
+  },
+  "performance_stats": {
+    "timers": {
+      "simulation_update": 1754093380.8510826,
+      "organisms_update": 1754093380.8510826,
+      "organism_update_2825": 1754093380.8510826,
+      "nearby_organisms": 1754093380.8581474,
+      "nearby_foods": 1754093380.8581474,
+      "organism_update_6724": 1754093380.8510826,
+      "organism_update_2993": 1754093380.8510826,
+      "organism_update_3794": 1754093380.8520675,
+      "organism_update_3195": 1754093380.8520675,
+      "organism_update_6454": 1754093380.8520675,
+      "organism_update_8332": 1754093380.8520675,
+      "organism_update_7862": 1754093380.8520675,
+      "organism_update_4614": 1754093380.8520675,
+      "organism_update_9340": 1754093380.8520675,
+      "organism_update_1388": 1754093380.8520675,
+      "organism_update_8070": 1754093380.8520675,
+      "organism_update_8352": 1754093380.8520675,
+      "organism_update_4282": 1754093380.8520675,
+      "organism_update_5948": 1754093380.8520675,
+      "organism_update_5077": 1754093380.8520675,
+      "organism_update_7638": 1754093380.8520675,
+      "organism_update_5362": 1754093380.853068,
+      "organism_update_8772": 1754093380.853068,
+      "organism_update_3350": 1754093380.853068,
+      "organism_update_7351": 1754093380.853068,
+      "organism_update_2885": 1754093380.853068,
+      "organism_update_7662": 1754093380.853068,
+      "organism_update_5372": 1754093380.853068,
+      "organism_update_6680": 1754093380.853068,
+      "organism_update_2434": 1754093380.853068,
+      "organism_update_6194": 1754093380.853068,
+      "organism_update_3643": 1754093380.853068,
+      "organism_update_1437": 1754093380.853068,
+      "organism_update_4941": 1754093380.853068,
+      "organism_update_4369": 1754093380.853068,
+      "organism_update_1107": 1754093380.8540833,
+      "organism_update_5503": 1754093380.8540833,
+      "organism_update_8367": 1754093380.8540833,
+      "organism_update_4243": 1754093380.8540833,
+      "organism_update_5703": 1754093380.8540833,
+      "organism_update_7821": 1754093380.8540833,
+      "organism_update_7902": 1754093380.8540833,
+      "organism_update_1860": 1754093380.8540833,
+      "organism_update_3900": 1754093380.8540833,
+      "organism_update_4178": 1754093380.8540833,
+      "organism_update_9205": 1754093380.8540833,
+      "organism_update_5441": 1754093380.8540833,
+      "organism_update_1424": 1754093380.8540833,
+      "organism_update_3876": 1754093380.8540833,
+      "organism_update_4134": 1754093380.8550801,
+      "organism_update_7389": 1754093380.8550801,
+      "organism_update_4678": 1754093380.8550801,
+      "organism_update_3133": 1754093380.8550801,
+      "organism_update_1996": 1754093380.8550801,
+      "organism_update_7299": 1754093380.8550801,
+      "organism_update_3222": 1754093380.8550801,
+      "organism_update_4791": 1754093380.8550801,
+      "organism_update_3162": 1754093380.855616,
+      "organism_update_7762": 1754093380.855616,
+      "organism_update_9093": 1754093380.855616,
+      "organism_update_7315": 1754093380.855616,
+      "organism_update_2652": 1754093380.855616,
+      "organism_update_2190": 1754093380.855616,
+      "organism_update_7017": 1754093380.855616,
+      "organism_update_7881": 1754093380.855616,
+      "organism_update_3906": 1754093380.855616,
+      "organism_update_6778": 1754093380.855616,
+      "organism_update_1469": 1754093380.855616,
+      "organism_update_7973": 1754093380.855616,
+      "organism_update_3159": 1754093380.855616,
+      "organism_update_9831": 1754093380.855616,
+      "organism_update_8681": 1754093380.855616,
+      "organism_update_2760": 1754093380.8566241,
+      "organism_update_6891": 1754093380.8566241,
+      "organism_update_3343": 1754093380.8566241,
+      "organism_update_2119": 1754093380.8566241,
+      "organism_update_8300": 1754093380.8566241,
+      "organism_update_6689": 1754093380.8566241,
+      "organism_update_7725": 1754093380.8566241,
+      "organism_update_7866": 1754093380.8566241,
+      "organism_update_5535": 1754093380.8566241,
+      "organism_update_7306": 1754093380.8566241,
+      "organism_update_4099": 1754093380.8566241,
+      "organism_update_4379": 1754093380.8566241,
+      "organism_update_9013": 1754093380.8566241,
+      "organism_update_1453": 1754093380.8566241,
+      "organism_update_8542": 1754093380.8566241,
+      "organism_update_9748": 1754093380.8566241,
+      "organism_update_4623": 1754093380.8566241,
+      "organism_update_8213": 1754093380.8566241,
+      "organism_update_7759": 1754093380.8566241,
+      "organism_update_8084": 1754093380.8566241,
+      "organism_update_3115": 1754093380.8581474,
+      "organism_update_5168": 1754093380.8581474,
+      "organism_update_5448": 1754093380.8581474,
+      "organism_update_2261": 1754093380.8581474,
+      "organism_update_7966": 1754093380.8581474,
+      "organism_update_8266": 1754093380.8581474,
+      "organism_update_9487": 1754093380.8581474,
+      "organism_update_8837": 1754093380.8581474,
+      "organism_update_4611": 1754093380.8581474,
+      "organism_update_9346": 1754093380.8581474,
+      "organism_update_7639": 1754093380.8581474,
+      "organism_update_4120": 1754093380.8581474,
+      "foods_update": 1754093380.8581474,
+      "rendering": 1754093380.8591619
+    },
+    "counters": {}
+  }
+}

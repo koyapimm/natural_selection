@@ -1,0 +1,300 @@
+{
+  "simulation_info": {
+    "frame_count": 385,
+    "total_time": 6.33635695775349,
+    "config": {
+      "name": "Default",
+      "description": "Temel evrimsel simülasyon",
+      "simulation": {
+        "fps": 60,
+        "max_organisms": 1000,
+        "world_size": [
+          2000,
+          2000
+        ],
+        "performance_mode": "medium",
+        "debug_mode": false,
+        "organism": {
+          "initial_count": 50,
+          "mutation_rate": 0.1,
+          "energy_decay": 0.08,
+          "reproduction_threshold": 50.0
+        },
+        "food": {
+          "spawn_rate": 0.15,
+          "energy_value": 15,
+          "base_decay_rate": 0.002
+        },
+        "food_types": {
+          "basic": 0.7,
+          "premium": 0.2,
+          "nutritious": 0.1
+        }
+      },
+      "visualization": {
+        "screen_size": [
+          1200,
+          800
+        ],
+        "camera": {
+          "zoom_sensitivity": 0.15,
+          "movement_speed": 400.0,
+          "edge_pan_speed": 300.0,
+          "edge_pan_threshold": 50,
+          "drag_sensitivity": 1.0,
+          "min_zoom": 0.1,
+          "max_zoom": 10.0
+        },
+        "organism": {
+          "render_style": "genetic",
+          "show_auras": true,
+          "show_genetic_colors": true,
+          "show_energy_bars": true,
+          "show_behavior_icons": true,
+          "aura_opacity": 50
+        },
+        "ui": {
+          "show_hud": true,
+          "show_organism_labels": true,
+          "show_debug_overlay": false,
+          "show_mini_map": true,
+          "show_organism_details": true,
+          "label_zoom_threshold": 2.0,
+          "detailed_label_zoom": 4.0
+        },
+        "biome": {
+          "enabled": true,
+          "show_background": true,
+          "background_zoom_threshold": 2.0,
+          "biome_resolution": 50,
+          "color_darkening": 30
+        },
+        "performance": {
+          "render_throttling": true,
+          "culling_enabled": true,
+          "lod_enabled": true,
+          "surface_caching": true
+        }
+      },
+      "scenario": {
+        "duration": 300,
+        "events": [
+          {
+            "time": 60,
+            "type": "food_shortage",
+            "duration": 30,
+            "intensity": 0.5
+          },
+          {
+            "time": 120,
+            "type": "predator_introduction",
+            "duration": 45,
+            "intensity": 0.3
+          },
+          {
+            "time": 180,
+            "type": "environmental_change",
+            "duration": 60,
+            "intensity": 0.7
+          },
+          {
+            "time": 240,
+            "type": "world_expansion",
+            "direction": "right",
+            "amount": 500
+          }
+        ]
+      }
+    }
+  },
+  "statistics": {
+    "total_organisms_created": 100,
+    "total_organisms_died": 0,
+    "total_food_spawned": 17,
+    "total_food_eaten": 0,
+    "generation_count": 0,
+    "average_fitness": 11.424693524303411,
+    "population_history": [
+      {
+        "frame": 60,
+        "population": 100,
+        "time": 0.9885633468627937
+      },
+      {
+        "frame": 120,
+        "population": 100,
+        "time": 1.9721798419952385
+      },
+      {
+        "frame": 180,
+        "population": 100,
+        "time": 2.960858519872027
+      },
+      {
+        "frame": 240,
+        "population": 100,
+        "time": 3.945856730143225
+      },
+      {
+        "frame": 300,
+        "population": 100,
+        "time": 4.9352128505706725
+      },
+      {
+        "frame": 360,
+        "population": 100,
+        "time": 5.9232669512430745
+      }
+    ],
+    "fitness_history": [
+      {
+        "frame": 60,
+        "average_fitness": 10.237025696016312,
+        "time": 0.9885633468627937
+      },
+      {
+        "frame": 120,
+        "average_fitness": 10.47260445972251,
+        "time": 1.9721798419952385
+      },
+      {
+        "frame": 180,
+        "average_fitness": 10.71040904326629,
+        "time": 2.960858519872027
+      },
+      {
+        "frame": 240,
+        "average_fitness": 10.948720929359425,
+        "time": 3.945856730143225
+      },
+      {
+        "frame": 300,
+        "average_fitness": 11.186882062288278,
+        "time": 4.9352128505706725
+      },
+      {
+        "frame": 360,
+        "average_fitness": 11.424693524303411,
+        "time": 5.9232669512430745
+      }
+    ]
+  },
+  "world_stats": {
+    "total_organisms": 100,
+    "total_food_eaten": 0,
+    "total_food_spawned": 17,
+    "chunk_count": 104,
+    "active_chunks": 104,
+    "total_chunks": 104,
+    "organism_count": 100,
+    "food_count": 17
+  },
+  "performance_stats": {
+    "timers": {
+      "simulation_update": 1754175686.3453956,
+      "organisms_update": 1754175686.3453956,
+      "organism_update_7606": 1754175686.3453956,
+      "organism_update_9429": 1754175686.3453956,
+      "organism_update_6515": 1754175686.3453956,
+      "organism_update_2177": 1754175686.3464441,
+      "organism_update_8040": 1754175686.3464441,
+      "organism_update_7897": 1754175686.3464441,
+      "organism_update_2270": 1754175686.3464441,
+      "organism_update_9951": 1754175686.3464441,
+      "organism_update_7940": 1754175686.3464441,
+      "organism_update_2374": 1754175686.3464441,
+      "organism_update_3733": 1754175686.3464441,
+      "organism_update_8696": 1754175686.3464441,
+      "organism_update_6969": 1754175686.346998,
+      "organism_update_4932": 1754175686.346998,
+      "organism_update_1433": 1754175686.346998,
+      "organism_update_9395": 1754175686.346998,
+      "organism_update_8643": 1754175686.346998,
+      "organism_update_2502": 1754175686.346998,
+      "organism_update_4297": 1754175686.346998,
+      "organism_update_5334": 1754175686.346998,
+      "organism_update_5477": 1754175686.346998,
+      "organism_update_6168": 1754175686.346998,
+      "organism_update_9673": 1754175686.346998,
+      "organism_update_4452": 1754175686.346998,
+      "organism_update_2748": 1754175686.346998,
+      "organism_update_1830": 1754175686.346998,
+      "organism_update_6409": 1754175686.3480282,
+      "organism_update_3662": 1754175686.3480282,
+      "organism_update_2481": 1754175686.3480282,
+      "organism_update_5929": 1754175686.3480282,
+      "organism_update_2047": 1754175686.3480282,
+      "organism_update_8404": 1754175686.3480282,
+      "organism_update_4234": 1754175686.3480282,
+      "organism_update_2672": 1754175686.3480282,
+      "organism_update_5168": 1754175686.3480282,
+      "organism_update_4150": 1754175686.3480282,
+      "organism_update_8633": 1754175686.3480282,
+      "organism_update_1072": 1754175686.3480282,
+      "organism_update_4379": 1754175686.3520288,
+      "organism_update_4425": 1754175686.349029,
+      "organism_update_5853": 1754175686.349029,
+      "organism_update_6634": 1754175686.349029,
+      "organism_update_6077": 1754175686.349029,
+      "organism_update_3301": 1754175686.349029,
+      "organism_update_4812": 1754175686.349029,
+      "organism_update_2923": 1754175686.349029,
+      "organism_update_8380": 1754175686.349029,
+      "organism_update_3827": 1754175686.3500154,
+      "organism_update_7113": 1754175686.3500154,
+      "organism_update_1528": 1754175686.3500154,
+      "organism_update_6560": 1754175686.3500154,
+      "organism_update_2871": 1754175686.3500154,
+      "organism_update_9002": 1754175686.3500154,
+      "organism_update_1417": 1754175686.3500154,
+      "organism_update_2925": 1754175686.3510187,
+      "organism_update_7023": 1754175686.3510187,
+      "organism_update_9022": 1754175686.3510187,
+      "organism_update_4159": 1754175686.3510187,
+      "organism_update_9377": 1754175686.3510187,
+      "organism_update_3350": 1754175686.3510187,
+      "organism_update_7963": 1754175686.3510187,
+      "organism_update_9959": 1754175686.3510187,
+      "organism_update_2584": 1754175686.3510187,
+      "organism_update_5533": 1754175686.3510187,
+      "organism_update_3108": 1754175686.3510187,
+      "organism_update_4971": 1754175686.3520288,
+      "organism_update_8652": 1754175686.3520288,
+      "organism_update_8413": 1754175686.3520288,
+      "organism_update_8183": 1754175686.3520288,
+      "organism_update_1519": 1754175686.3520288,
+      "organism_update_4710": 1754175686.3520288,
+      "organism_update_1027": 1754175686.3520288,
+      "organism_update_2308": 1754175686.3520288,
+      "organism_update_2151": 1754175686.3520288,
+      "organism_update_7764": 1754175686.3520288,
+      "organism_update_3444": 1754175686.3520288,
+      "organism_update_8331": 1754175686.3530135,
+      "organism_update_5463": 1754175686.3530135,
+      "organism_update_3296": 1754175686.3530135,
+      "organism_update_7997": 1754175686.3530135,
+      "organism_update_4408": 1754175686.3530135,
+      "organism_update_6068": 1754175686.3530135,
+      "organism_update_1317": 1754175686.3530135,
+      "organism_update_7668": 1754175686.3530135,
+      "organism_update_5064": 1754175686.3530135,
+      "organism_update_8047": 1754175686.3530135,
+      "organism_update_6859": 1754175686.3530135,
+      "organism_update_7954": 1754175686.3530135,
+      "organism_update_1042": 1754175686.3530135,
+      "organism_update_6254": 1754175686.3530135,
+      "organism_update_2316": 1754175686.3540277,
+      "organism_update_4992": 1754175686.3540277,
+      "organism_update_9516": 1754175686.3540277,
+      "organism_update_1892": 1754175686.3540277,
+      "organism_update_5983": 1754175686.3540277,
+      "organism_update_3262": 1754175686.3540277,
+      "organism_update_4951": 1754175686.3540277,
+      "organism_update_1034": 1754175686.3540277,
+      "organism_update_3728": 1754175686.3540277,
+      "foods_update": 1754175686.3540277,
+      "rendering": 1754175686.3540277
+    },
+    "counters": {}
+  }
+}

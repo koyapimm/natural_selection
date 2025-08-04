@@ -1,0 +1,587 @@
+{
+  "simulation_info": {
+    "frame_count": 1541,
+    "total_time": 25.313132063547616,
+    "config": {
+      "name": "Default",
+      "description": "Temel evrimsel simülasyon",
+      "simulation": {
+        "fps": 60,
+        "max_organisms": 1000,
+        "world_size": [
+          2000,
+          2000
+        ],
+        "performance_mode": "medium",
+        "debug_mode": false,
+        "organism": {
+          "initial_count": 50,
+          "mutation_rate": 0.1,
+          "energy_decay": 0.08,
+          "reproduction_threshold": 50.0
+        },
+        "food": {
+          "spawn_rate": 0.15,
+          "energy_value": 15,
+          "base_decay_rate": 0.002
+        },
+        "food_types": {
+          "basic": 0.7,
+          "premium": 0.2,
+          "nutritious": 0.1
+        }
+      },
+      "visualization": {
+        "screen_size": [
+          1200,
+          800
+        ],
+        "camera": {
+          "zoom_sensitivity": 0.15,
+          "movement_speed": 400.0,
+          "edge_pan_speed": 300.0,
+          "edge_pan_threshold": 50,
+          "drag_sensitivity": 1.0,
+          "min_zoom": 0.1,
+          "max_zoom": 10.0
+        },
+        "organism": {
+          "render_style": "genetic",
+          "show_auras": true,
+          "show_genetic_colors": true,
+          "show_energy_bars": true,
+          "show_behavior_icons": true,
+          "aura_opacity": 50
+        },
+        "ui": {
+          "show_hud": true,
+          "show_organism_labels": true,
+          "show_debug_overlay": false,
+          "show_mini_map": true,
+          "show_organism_details": true,
+          "label_zoom_threshold": 2.0,
+          "detailed_label_zoom": 4.0
+        },
+        "biome": {
+          "enabled": true,
+          "show_background": true,
+          "background_zoom_threshold": 2.0,
+          "biome_resolution": 50,
+          "color_darkening": 30
+        },
+        "performance": {
+          "render_throttling": true,
+          "culling_enabled": true,
+          "lod_enabled": true,
+          "surface_caching": true
+        }
+      },
+      "scenario": {
+        "duration": 300,
+        "events": [
+          {
+            "time": 60,
+            "type": "food_shortage",
+            "duration": 30,
+            "intensity": 0.5
+          },
+          {
+            "time": 120,
+            "type": "predator_introduction",
+            "duration": 45,
+            "intensity": 0.3
+          },
+          {
+            "time": 180,
+            "type": "environmental_change",
+            "duration": 60,
+            "intensity": 0.7
+          },
+          {
+            "time": 240,
+            "type": "world_expansion",
+            "direction": "right",
+            "amount": 500
+          }
+        ]
+      }
+    }
+  },
+  "statistics": {
+    "total_organisms_created": 196,
+    "total_organisms_died": 0,
+    "total_food_spawned": 76,
+    "total_food_eaten": 44,
+    "generation_count": 0,
+    "average_fitness": 22.66295021373226,
+    "population_history": [
+      {
+        "frame": 60,
+        "population": 100,
+        "time": 0.9834478060404468
+      },
+      {
+        "frame": 120,
+        "population": 100,
+        "time": 1.9690542062123608
+      },
+      {
+        "frame": 180,
+        "population": 100,
+        "time": 2.951138353347776
+      },
+      {
+        "frame": 240,
+        "population": 100,
+        "time": 3.9389592011769574
+      },
+      {
+        "frame": 300,
+        "population": 100,
+        "time": 4.919098854064936
+      },
+      {
+        "frame": 360,
+        "population": 100,
+        "time": 5.902917067209873
+      },
+      {
+        "frame": 420,
+        "population": 100,
+        "time": 6.885092782974235
+      },
+      {
+        "frame": 480,
+        "population": 100,
+        "time": 7.87039426167805
+      },
+      {
+        "frame": 540,
+        "population": 100,
+        "time": 8.855014673868821
+      },
+      {
+        "frame": 600,
+        "population": 100,
+        "time": 9.834358406066917
+      },
+      {
+        "frame": 660,
+        "population": 100,
+        "time": 10.816816902160687
+      },
+      {
+        "frame": 720,
+        "population": 100,
+        "time": 11.795660972595277
+      },
+      {
+        "frame": 780,
+        "population": 100,
+        "time": 12.779332971572956
+      },
+      {
+        "frame": 840,
+        "population": 100,
+        "time": 13.770985984802353
+      },
+      {
+        "frame": 900,
+        "population": 100,
+        "time": 14.758115434646738
+      },
+      {
+        "frame": 960,
+        "population": 100,
+        "time": 15.744323571523184
+      },
+      {
+        "frame": 1020,
+        "population": 100,
+        "time": 16.7322406927746
+      },
+      {
+        "frame": 1080,
+        "population": 100,
+        "time": 17.71630214055391
+      },
+      {
+        "frame": 1140,
+        "population": 100,
+        "time": 18.699342155456637
+      },
+      {
+        "frame": 1200,
+        "population": 100,
+        "time": 19.682989645004344
+      },
+      {
+        "frame": 1260,
+        "population": 164,
+        "time": 20.66999861399336
+      },
+      {
+        "frame": 1320,
+        "population": 189,
+        "time": 21.660395129521678
+      },
+      {
+        "frame": 1380,
+        "population": 193,
+        "time": 22.6523789564768
+      },
+      {
+        "frame": 1440,
+        "population": 195,
+        "time": 23.641066853205277
+      },
+      {
+        "frame": 1500,
+        "population": 196,
+        "time": 24.634035841623817
+      }
+    ],
+    "fitness_history": [
+      {
+        "frame": 60,
+        "average_fitness": 10.238489323460879,
+        "time": 0.9834478060404468
+      },
+      {
+        "frame": 120,
+        "average_fitness": 10.476574981058752,
+        "time": 1.9690542062123608
+      },
+      {
+        "frame": 180,
+        "average_fitness": 10.773146179534917,
+        "time": 2.951138353347776
+      },
+      {
+        "frame": 240,
+        "average_fitness": 11.256375420458461,
+        "time": 3.9389592011769574
+      },
+      {
+        "frame": 300,
+        "average_fitness": 11.556473851760849,
+        "time": 4.919098854064936
+      },
+      {
+        "frame": 360,
+        "average_fitness": 11.91366727272541,
+        "time": 5.902917067209873
+      },
+      {
+        "frame": 420,
+        "average_fitness": 12.2109955323003,
+        "time": 6.885092782974235
+      },
+      {
+        "frame": 480,
+        "average_fitness": 12.75361026936338,
+        "time": 7.87039426167805
+      },
+      {
+        "frame": 540,
+        "average_fitness": 12.990837558870934,
+        "time": 8.855014673868821
+      },
+      {
+        "frame": 600,
+        "average_fitness": 13.411375242256149,
+        "time": 9.834358406066917
+      },
+      {
+        "frame": 660,
+        "average_fitness": 13.712267852350852,
+        "time": 10.816816902160687
+      },
+      {
+        "frame": 720,
+        "average_fitness": 14.07438363525135,
+        "time": 11.795660972595277
+      },
+      {
+        "frame": 780,
+        "average_fitness": 14.370079458620655,
+        "time": 12.779332971572956
+      },
+      {
+        "frame": 840,
+        "average_fitness": 14.668833160402905,
+        "time": 13.770985984802353
+      },
+      {
+        "frame": 900,
+        "average_fitness": 15.093656033625248,
+        "time": 14.758115434646738
+      },
+      {
+        "frame": 960,
+        "average_fitness": 15.391804535250298,
+        "time": 15.744323571523184
+      },
+      {
+        "frame": 1020,
+        "average_fitness": 15.940052038998875,
+        "time": 16.7322406927746
+      },
+      {
+        "frame": 1080,
+        "average_fitness": 16.300906604858373,
+        "time": 17.71630214055391
+      },
+      {
+        "frame": 1140,
+        "average_fitness": 16.59725694949847,
+        "time": 18.699342155456637
+      },
+      {
+        "frame": 1200,
+        "average_fitness": 17.01354583609516,
+        "time": 19.682989645004344
+      },
+      {
+        "frame": 1260,
+        "average_fitness": 20.698533762942393,
+        "time": 20.66999861399336
+      },
+      {
+        "frame": 1320,
+        "average_fitness": 21.652289848098295,
+        "time": 21.660395129521678
+      },
+      {
+        "frame": 1380,
+        "average_fitness": 22.038170754399637,
+        "time": 22.6523789564768
+      },
+      {
+        "frame": 1440,
+        "average_fitness": 22.344590929219017,
+        "time": 23.641066853205277
+      },
+      {
+        "frame": 1500,
+        "average_fitness": 22.66295021373226,
+        "time": 24.634035841623817
+      }
+    ]
+  },
+  "world_stats": {
+    "total_organisms": 197,
+    "total_food_eaten": 45,
+    "total_food_spawned": 76,
+    "chunk_count": 142,
+    "active_chunks": 142,
+    "total_chunks": 142,
+    "organism_count": 197,
+    "food_count": 31
+  },
+  "performance_stats": {
+    "timers": {
+      "simulation_update": 1754175870.994311,
+      "organisms_update": 1754175870.994311,
+      "organism_update_7837": 1754175870.997827,
+      "organism_update_1416": 1754175870.997827,
+      "organism_update_5628": 1754175870.997827,
+      "organism_update_7654": 1754175870.997827,
+      "organism_update_8974": 1754175870.997827,
+      "organism_update_8703": 1754175870.997827,
+      "organism_update_9727": 1754175870.997827,
+      "organism_update_7696": 1754175870.997827,
+      "organism_update_1256": 1754175870.997827,
+      "organism_update_2008": 1754175870.997827,
+      "organism_update_1391": 1754175870.998813,
+      "organism_update_9790": 1754175870.998813,
+      "organism_update_2750": 1754175870.998813,
+      "organism_update_1986": 1754175870.998813,
+      "organism_update_2348": 1754175870.9993215,
+      "organism_update_8848": 1754175870.9993215,
+      "organism_update_4466": 1754175870.9993215,
+      "organism_update_1413": 1754175870.9993215,
+      "organism_update_9596": 1754175870.9993215,
+      "organism_update_4353": 1754175870.9993215,
+      "organism_update_3884": 1754175870.9993215,
+      "organism_update_6864": 1754175870.9993215,
+      "organism_update_9921": 1754175870.9993215,
+      "organism_update_7823": 1754175870.9993215,
+      "organism_update_3641": 1754175870.9993215,
+      "organism_update_1162": 1754175870.9993215,
+      "organism_update_4959": 1754175870.9993215,
+      "organism_update_3287": 1754175870.9993215,
+      "organism_update_7219": 1754175870.9993215,
+      "organism_update_1075": 1754175870.9993215,
+      "organism_update_5219": 1754175870.9993215,
+      "organism_update_5646": 1754175870.9993215,
+      "organism_update_2615": 1754175871.0003412,
+      "organism_update_7001": 1754175871.0003412,
+      "organism_update_9643": 1754175871.0003412,
+      "organism_update_5857": 1754175871.0003412,
+      "organism_update_6703": 1754175871.0003412,
+      "organism_update_8597": 1754175871.0003412,
+      "organism_update_4441": 1754175871.0003412,
+      "organism_update_9615": 1754175871.0003412,
+      "organism_update_4840": 1754175871.0003412,
+      "organism_update_8595": 1754175871.0003412,
+      "organism_update_6612": 1754175871.0003412,
+      "organism_update_1232": 1754175871.0003412,
+      "organism_update_5364": 1754175871.0003412,
+      "organism_update_3237": 1754175871.0003412,
+      "organism_update_3638": 1754175871.0003412,
+      "organism_update_6287": 1754175871.0003412,
+      "organism_update_9674": 1754175871.0003412,
+      "organism_update_2179": 1754175871.0003412,
+      "organism_update_1666": 1754175871.0003412,
+      "organism_update_2013": 1754175871.0003412,
+      "organism_update_3585": 1754175871.0003412,
+      "organism_update_7876": 1754175871.0003412,
+      "organism_update_7867": 1754175871.0003412,
+      "organism_update_7623": 1754175871.0003412,
+      "organism_update_8245": 1754175871.00134,
+      "organism_update_2592": 1754175871.00134,
+      "organism_update_9728": 1754175871.00134,
+      "organism_update_3220": 1754175871.00134,
+      "organism_update_2375": 1754175871.00134,
+      "organism_update_3741": 1754175871.00134,
+      "organism_update_8301": 1754175871.00134,
+      "organism_update_4964": 1754175871.00134,
+      "organism_update_7397": 1754175871.00134,
+      "organism_update_4957": 1754175871.00134,
+      "organism_update_1865": 1754175871.00134,
+      "organism_update_4214": 1754175871.00134,
+      "organism_update_3915": 1754175871.00134,
+      "organism_update_2716": 1754175871.00134,
+      "organism_update_4489": 1754175871.00134,
+      "organism_update_3857": 1754175871.00134,
+      "organism_update_8567": 1754175871.00134,
+      "organism_update_5808": 1754175871.00134,
+      "organism_update_8365": 1754175871.00134,
+      "organism_update_3362": 1754175871.00134,
+      "organism_update_2642": 1754175871.00134,
+      "organism_update_3902": 1754175871.00134,
+      "organism_update_6617": 1754175871.00134,
+      "organism_update_9815": 1754175871.0023236,
+      "organism_update_1785": 1754175871.0023236,
+      "organism_update_3747": 1754175871.0023236,
+      "organism_update_2711": 1754175871.0023236,
+      "organism_update_2204": 1754175871.0023236,
+      "organism_update_1568": 1754175871.0023236,
+      "organism_update_1885": 1754175871.0023236,
+      "organism_update_6329": 1754175871.0023236,
+      "organism_update_7603": 1754175871.0023236,
+      "organism_update_3252": 1754175871.0023236,
+      "organism_update_7363": 1754175871.0023236,
+      "organism_update_9439": 1754175871.0023236,
+      "organism_update_8322": 1754175871.0023236,
+      "organism_update_5595": 1754175871.0023236,
+      "organism_update_3859": 1754175871.0023236,
+      "organism_update_9694": 1754175871.0023236,
+      "organism_update_2733": 1754175871.0023236,
+      "organism_update_9029": 1754175871.0023236,
+      "organism_update_2681": 1754175871.0023236,
+      "organism_update_1404": 1754175871.0023236,
+      "organism_update_4601": 1754175871.0023236,
+      "foods_update": 1754175871.0023236,
+      "rendering": 1754175871.0023236,
+      "organism_update_2224": 1754175870.997827,
+      "organism_update_8010": 1754175870.997827,
+      "organism_update_6086": 1754175870.997827,
+      "organism_update_5509": 1754175870.997827,
+      "organism_update_1974": 1754175870.997827,
+      "organism_update_6281": 1754175870.997827,
+      "organism_update_4237": 1754175870.997827,
+      "organism_update_3597": 1754175870.997827,
+      "organism_update_1687": 1754175870.997827,
+      "organism_update_2339": 1754175870.997827,
+      "organism_update_6465": 1754175870.997827,
+      "organism_update_9404": 1754175870.997827,
+      "organism_update_1063": 1754175870.9967954,
+      "organism_update_4543": 1754175870.9967954,
+      "organism_update_6450": 1754175870.9967954,
+      "organism_update_6182": 1754175870.997827,
+      "organism_update_6579": 1754175870.997827,
+      "organism_update_9530": 1754175870.997827,
+      "organism_update_7651": 1754175870.997827,
+      "organism_update_3492": 1754175870.997827,
+      "organism_update_2800": 1754175870.9967954,
+      "organism_update_2412": 1754175870.9967954,
+      "organism_update_7325": 1754175870.9967954,
+      "organism_update_4254": 1754175870.9967954,
+      "organism_update_6853": 1754175870.9967954,
+      "organism_update_1465": 1754175870.9967954,
+      "organism_update_1028": 1754175870.9967954,
+      "organism_update_8634": 1754175870.9967954,
+      "organism_update_5460": 1754175870.9967954,
+      "organism_update_4194": 1754175870.9967954,
+      "organism_update_2720": 1754175870.9967954,
+      "organism_update_9887": 1754175870.9967954,
+      "organism_update_2271": 1754175870.9967954,
+      "organism_update_5794": 1754175870.9967954,
+      "organism_update_3065": 1754175870.9967954,
+      "organism_update_6598": 1754175870.9967954,
+      "organism_update_9328": 1754175870.9967954,
+      "organism_update_7079": 1754175870.9967954,
+      "organism_update_6389": 1754175870.9967954,
+      "organism_update_4139": 1754175870.9967954,
+      "organism_update_5254": 1754175870.9967954,
+      "organism_update_8579": 1754175870.9967954,
+      "organism_update_7915": 1754175870.9967954,
+      "organism_update_2631": 1754175870.9967954,
+      "organism_update_6273": 1754175870.9967954,
+      "organism_update_1134": 1754175870.9967954,
+      "organism_update_9123": 1754175870.9967954,
+      "organism_update_3164": 1754175870.9957755,
+      "organism_update_1159": 1754175870.9957755,
+      "organism_update_1125": 1754175870.9967954,
+      "organism_update_4071": 1754175870.9957755,
+      "organism_update_9366": 1754175870.9957755,
+      "organism_update_9533": 1754175870.9957755,
+      "organism_update_6405": 1754175870.9957755,
+      "organism_update_7635": 1754175870.9957755,
+      "organism_update_1419": 1754175870.9957755,
+      "organism_update_5575": 1754175870.9957755,
+      "organism_update_1749": 1754175870.9957755,
+      "organism_update_4687": 1754175870.9957755,
+      "organism_update_2847": 1754175870.9957755,
+      "organism_update_1524": 1754175870.9957755,
+      "organism_update_5417": 1754175870.9957755,
+      "organism_update_6549": 1754175870.9957755,
+      "organism_update_3475": 1754175870.9957755,
+      "organism_update_9854": 1754175870.9957755,
+      "organism_update_5467": 1754175870.9957755,
+      "organism_update_8163": 1754175870.9957755,
+      "organism_update_9955": 1754175870.9957755,
+      "organism_update_2867": 1754175870.9957755,
+      "organism_update_2304": 1754175870.9957755,
+      "organism_update_8218": 1754175870.9957755,
+      "organism_update_3653": 1754175870.9957755,
+      "organism_update_5684": 1754175870.9957755,
+      "organism_update_6629": 1754175870.9957755,
+      "organism_update_5116": 1754175870.9957755,
+      "organism_update_7534": 1754175870.9957755,
+      "organism_update_2299": 1754175870.9957755,
+      "organism_update_3246": 1754175870.9957755,
+      "organism_update_5990": 1754175870.994311,
+      "organism_update_1713": 1754175870.994311,
+      "organism_update_7807": 1754175870.994311,
+      "organism_update_6657": 1754175870.994311,
+      "organism_update_4801": 1754175870.994311,
+      "organism_update_3468": 1754175870.994311,
+      "organism_update_9124": 1754175870.994311,
+      "organism_update_5965": 1754175870.994311,
+      "organism_update_4332": 1754175870.994311,
+      "organism_update_1858": 1754175870.994311,
+      "organism_update_5782": 1754175870.994311,
+      "organism_update_2263": 1754175870.994311,
+      "organism_update_4013": 1754175870.994311,
+      "organism_update_8982": 1754175870.994311,
+      "organism_update_5771": 1754175870.994311,
+      "organism_update_7415": 1754175870.994311,
+      "organism_update_2173": 1754175870.994311,
+      "organism_update_3964": 1754175870.994311
+    },
+    "counters": {}
+  }
+}

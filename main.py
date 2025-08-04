@@ -1,87 +1,84 @@
+#!/usr/bin/env python3
 """
-main.py
-Yapay yaşam simülasyonunun Pygame tabanlı ana döngüsünü başlatır.
-Modüler yapı için sadece başlangıç noktasıdır.
+Ecosim - Evrimsel Biyoloji Simülasyonu
+Ana başlatıcı dosya
 """
 
-import pygame
 import sys
-import settings
-from simulation import Simulation
-import input_handler
-import overlay
+import os
+import argparse
+import yaml
+from pathlib import Path
 
-# TODO: Simulation, Blob, Food gibi sınıflar ayrı dosyalarda tanımlanacak
+# Core modüllerini import et
+sys.path.append(os.path.join(os.path.dirname(__file__), 'core'))
+from core.simulation import Simulation
+from core.scenario_handler import ScenarioHandler
+
+def load_config(config_path):
+    """YAML config dosyasını yükle"""
+    with open(config_path, 'r', encoding='utf-8') as f:
+        return yaml.safe_load(f)
 
 def main():
-    # Pygame başlat
-    pygame.init()
-    screen = pygame.display.set_mode((settings.SCREEN_WIDTH, settings.SCREEN_HEIGHT))
-    pygame.display.set_caption("Yapay Yaşam Simülasyonu")
-    clock = pygame.time.Clock()
-
-    # TODO: Simulation sınıfı tanımlandığında buradan import edilecek
-    # simulation = Simulation()
-    simulation = Simulation()  # Yer tutucu, ileride Simulation nesnesi olacak
-    font = pygame.font.SysFont("Arial", 16)
-
-    running = True
-    while running:
-        # FPS'e sabitle
-        clock.tick(settings.SIMULATION_SPEED)
-
-        # input_handler ile eventleri işle
-        running = input_handler.handle_input()
-
-        # Gün döngüsü: arkaplan rengini ayarla
-        if settings.DAY_NIGHT_CYCLE:
-            cycle_pos = (simulation.frame_count % settings.FRAMES_PER_DAY) / settings.FRAMES_PER_DAY
-            # 0-0.5 gündüz, 0.5-1 gece, yumuşak geçiş
-            def lerp_color(c1, c2, t):
-                return tuple(int(c1[i] + (c2[i] - c1[i]) * t) for i in range(3))
-            if cycle_pos < 0.5:
-                t = cycle_pos * 2
-                bg_color = lerp_color(settings.DAY_COLOR, settings.NIGHT_COLOR, t)
-            else:
-                t = (cycle_pos - 0.5) * 2
-                bg_color = lerp_color(settings.NIGHT_COLOR, settings.DAY_COLOR, t)
-            screen.fill(bg_color)
+    parser = argparse.ArgumentParser(description='Ecosim - Evrimsel Biyoloji Simülasyonu')
+    parser.add_argument('--scenario', '-s', default='default', 
+                       help='Çalıştırılacak senaryo adı')
+    parser.add_argument('--config', '-c', 
+                       help='Özel config dosyası yolu')
+    parser.add_argument('--headless', action='store_true',
+                       help='Görsel olmadan sadece simülasyon çalıştır')
+    parser.add_argument('--export', '-e', action='store_true',
+                       help='Simülasyon sonuçlarını dışa aktar')
+    
+    args = parser.parse_args()
+    
+    # Senaryo yapılandırmasını yükle
+    if args.config:
+        config = load_config(args.config)
+    else:
+        scenario_path = Path(f"scenarios/{args.scenario}/config.yaml")
+        if scenario_path.exists():
+            config = load_config(scenario_path)
         else:
-            screen.fill(settings.COLOR_BACKGROUND)
-
-        # Simulation update sadece pause değilse
-        if simulation and not settings.PAUSE_SIMULATION:
-            simulation.update()  # Simülasyon mantığı burada çalışacak
-        if simulation:
-            simulation.draw(screen)  # Simülasyonun görsel çıktısı burada çizilecek
-        # TODO: Blob ve Food nesneleri simulation içinde yönetilecek
-
-        # Gün/gece oranı ve ortalama aggression hesapla
-        if settings.DAY_NIGHT_CYCLE:
-            cycle_pos = (simulation.frame_count % settings.FRAMES_PER_DAY) / settings.FRAMES_PER_DAY
-            if cycle_pos < 0.5:
-                day_night_ratio = cycle_pos * 2
-            else:
-                day_night_ratio = 1.0 - (cycle_pos - 0.5) * 2
-        else:
-            day_night_ratio = 0.0
-        if simulation and hasattr(simulation, 'blobs') and simulation.blobs:
-            avg_aggr = sum(b.dna["aggression"] for b in simulation.blobs) / len(simulation.blobs)
-        else:
-            avg_aggr = 0.0
-
-        overlay.draw_overlay(screen, font, simulation.frame_count, avg_aggr, day_night_ratio, simulation.blobs)
-
-        # Ekranı güncelle
-        pygame.display.flip()
-        # FPS göstergesi (sağ üst köşe)
-        fps = clock.get_fps()
-        fps_font = pygame.font.SysFont("Arial", 14)
-        fps_text = fps_font.render(f"FPS: {fps:.1f}", True, (255,255,0))
-        screen.blit(fps_text, (settings.SCREEN_WIDTH - 80, 10))
-
-    pygame.quit()
-    sys.exit()
+            print(f"Uyarı: {scenario_path} bulunamadı, varsayılan config kullanılıyor")
+            config = {
+                'simulation': {
+                    'fps': 60,
+                    'max_organisms': 1000,
+                    'world_size': [2000, 2000]
+                },
+                'organism': {
+                    'initial_count': 100,
+                    'mutation_rate': 0.1,
+                    'energy_decay': 0.1
+                },
+                'food': {
+                    'spawn_rate': 0.05,
+                    'energy_value': 10
+                }
+            }
+    
+    # Simülasyonu başlat
+    try:
+        simulation = Simulation(config, headless=args.headless)
+        scenario_handler = ScenarioHandler(args.scenario, simulation)
+        
+        print(f"🎮 Ecosim başlatılıyor...")
+        print(f"📊 Senaryo: {args.scenario}")
+        print(f"⚙️  Config: {config.get('simulation', {})}")
+        
+        # Ana simülasyon döngüsü
+        simulation.run(scenario_handler)
+        
+        if args.export:
+            simulation.export_results()
+            
+    except KeyboardInterrupt:
+        print("\n⏹️  Simülasyon kullanıcı tarafından durduruldu")
+    except Exception as e:
+        print(f"❌ Hata: {e}")
+        sys.exit(1)
 
 if __name__ == "__main__":
     main() 

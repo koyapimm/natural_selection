@@ -1,0 +1,653 @@
+{
+  "simulation_info": {
+    "frame_count": 1552,
+    "total_time": 25.679870271682567,
+    "config": {
+      "name": "Default",
+      "description": "Temel evrimsel simülasyon",
+      "simulation": {
+        "fps": 60,
+        "max_organisms": 1000,
+        "world_size": [
+          2000,
+          2000
+        ],
+        "performance_mode": "medium",
+        "debug_mode": true,
+        "organism": {
+          "initial_count": 50,
+          "mutation_rate": 0.1,
+          "energy_decay": 0.03,
+          "reproduction_threshold": 40.0
+        },
+        "food": {
+          "spawn_rate": 0.25,
+          "energy_value": 20,
+          "base_decay_rate": 0.001
+        },
+        "food_types": {
+          "basic": 0.7,
+          "premium": 0.2,
+          "nutritious": 0.1
+        }
+      },
+      "visualization": {
+        "screen_size": [
+          1200,
+          800
+        ],
+        "show_energy_bars": true,
+        "show_fps": true
+      },
+      "events": {
+        "population_boom": {
+          "trigger_type": "population",
+          "min_population": 200,
+          "action_type": "modify_environment",
+          "modification_type": "food_spawn_rate",
+          "new_rate": 0.08
+        },
+        "fitness_peak": {
+          "trigger_type": "fitness",
+          "min_fitness": 100,
+          "action_type": "spawn_organisms",
+          "count": 20,
+          "organism_type": "aggressive"
+        },
+        "time_milestone": {
+          "trigger_type": "time",
+          "trigger_time": 60.0,
+          "action_type": "modify_environment",
+          "modification_type": "world_expansion",
+          "direction": "right",
+          "amount": 500
+        }
+      }
+    }
+  },
+  "statistics": {
+    "total_organisms_created": 100,
+    "total_organisms_died": 0,
+    "total_food_spawned": 86,
+    "total_food_eaten": 0,
+    "generation_count": 0,
+    "average_fitness": 24.90001156087548,
+    "population_history": [
+      {
+        "frame": 60,
+        "population": 100,
+        "time": 0.9863469759623217
+      },
+      {
+        "frame": 120,
+        "population": 100,
+        "time": 1.9721135616302483
+      },
+      {
+        "frame": 180,
+        "population": 100,
+        "time": 2.9560110727945936
+      },
+      {
+        "frame": 240,
+        "population": 100,
+        "time": 3.938437477747595
+      },
+      {
+        "frame": 300,
+        "population": 100,
+        "time": 4.925556961695347
+      },
+      {
+        "frame": 360,
+        "population": 100,
+        "time": 5.9121305465698155
+      },
+      {
+        "frame": 420,
+        "population": 100,
+        "time": 6.89278499285379
+      },
+      {
+        "frame": 480,
+        "population": 100,
+        "time": 7.875246461232491
+      },
+      {
+        "frame": 540,
+        "population": 100,
+        "time": 8.869061406453474
+      },
+      {
+        "frame": 600,
+        "population": 100,
+        "time": 9.867190901438462
+      },
+      {
+        "frame": 660,
+        "population": 100,
+        "time": 10.863708829879867
+      },
+      {
+        "frame": 720,
+        "population": 100,
+        "time": 11.859224033355861
+      },
+      {
+        "frame": 780,
+        "population": 100,
+        "time": 12.856470902761016
+      },
+      {
+        "frame": 840,
+        "population": 100,
+        "time": 13.852310291926297
+      },
+      {
+        "frame": 900,
+        "population": 100,
+        "time": 14.84698685010301
+      },
+      {
+        "frame": 960,
+        "population": 100,
+        "time": 15.843124787013044
+      },
+      {
+        "frame": 1020,
+        "population": 208,
+        "time": 16.84121093750027
+      },
+      {
+        "frame": 1080,
+        "population": 269,
+        "time": 17.83550947507245
+      },
+      {
+        "frame": 1140,
+        "population": 297,
+        "time": 18.833444420496797
+      },
+      {
+        "frame": 1200,
+        "population": 304,
+        "time": 19.831775426864745
+      },
+      {
+        "frame": 1260,
+        "population": 306,
+        "time": 20.83080523808804
+      },
+      {
+        "frame": 1320,
+        "population": 306,
+        "time": 21.82742888132733
+      },
+      {
+        "frame": 1380,
+        "population": 307,
+        "time": 22.824831215540534
+      },
+      {
+        "frame": 1440,
+        "population": 307,
+        "time": 23.818522930145186
+      },
+      {
+        "frame": 1500,
+        "population": 307,
+        "time": 24.81545344988492
+      }
+    ],
+    "fitness_history": [
+      {
+        "frame": 60,
+        "average_fitness": 10.246619057305656,
+        "time": 0.9863469759623217
+      },
+      {
+        "frame": 120,
+        "average_fitness": 10.490774797439578,
+        "time": 1.9721135616302483
+      },
+      {
+        "frame": 180,
+        "average_fitness": 10.73707002635001,
+        "time": 2.9560110727945936
+      },
+      {
+        "frame": 240,
+        "average_fitness": 11.047420818312926,
+        "time": 3.938437477747595
+      },
+      {
+        "frame": 300,
+        "average_fitness": 11.355992593749356,
+        "time": 4.925556961695347
+      },
+      {
+        "frame": 360,
+        "average_fitness": 11.601911359214755,
+        "time": 5.9121305465698155
+      },
+      {
+        "frame": 420,
+        "average_fitness": 11.846841837040575,
+        "time": 6.89278499285379
+      },
+      {
+        "frame": 480,
+        "average_fitness": 12.151112784973737,
+        "time": 7.875246461232491
+      },
+      {
+        "frame": 540,
+        "average_fitness": 12.463122769896158,
+        "time": 8.869061406453474
+      },
+      {
+        "frame": 600,
+        "average_fitness": 12.710971360794636,
+        "time": 9.867190901438462
+      },
+      {
+        "frame": 660,
+        "average_fitness": 12.958369777059536,
+        "time": 10.863708829879867
+      },
+      {
+        "frame": 720,
+        "average_fitness": 13.204640833187039,
+        "time": 11.859224033355861
+      },
+      {
+        "frame": 780,
+        "average_fitness": 13.516772527281358,
+        "time": 12.856470902761016
+      },
+      {
+        "frame": 840,
+        "average_fitness": 13.763204703696474,
+        "time": 13.852310291926297
+      },
+      {
+        "frame": 900,
+        "average_fitness": 14.069058953110314,
+        "time": 14.84698685010301
+      },
+      {
+        "frame": 960,
+        "average_fitness": 14.31563950775453,
+        "time": 15.843124787013044
+      },
+      {
+        "frame": 1020,
+        "average_fitness": 20.889584744269207,
+        "time": 16.84121093750027
+      },
+      {
+        "frame": 1080,
+        "average_fitness": 22.54265244760606,
+        "time": 17.83550947507245
+      },
+      {
+        "frame": 1140,
+        "average_fitness": 23.250271679849803,
+        "time": 18.833444420496797
+      },
+      {
+        "frame": 1200,
+        "average_fitness": 23.604656509812568,
+        "time": 19.831775426864745
+      },
+      {
+        "frame": 1260,
+        "average_fitness": 23.882088615022266,
+        "time": 20.83080523808804
+      },
+      {
+        "frame": 1320,
+        "average_fitness": 24.14825210159186,
+        "time": 21.82742888132733
+      },
+      {
+        "frame": 1380,
+        "average_fitness": 24.408201786959655,
+        "time": 22.824831215540534
+      },
+      {
+        "frame": 1440,
+        "average_fitness": 24.65330269639413,
+        "time": 23.818522930145186
+      },
+      {
+        "frame": 1500,
+        "average_fitness": 24.90001156087548,
+        "time": 24.81545344988492
+      }
+    ]
+  },
+  "world_stats": {
+    "total_organisms": 307,
+    "total_foods": 72,
+    "total_food_eaten": 14,
+    "world_area": 4000000,
+    "chunks_loaded": 0,
+    "organism_density": 7.675e-05,
+    "food_density": 1.8e-05,
+    "active_chunks_count": 0
+  },
+  "performance_stats": {
+    "timers": {
+      "simulation_update": 1754098422.5056617,
+      "organisms_update": 1754098422.5056617,
+      "organism_update_2829": 1754098422.46689,
+      "nearby_organisms": 1754098422.4897618,
+      "nearby_foods": 1754098422.4897618,
+      "organism_update_3558": 1754098422.46689,
+      "organism_update_7028": 1754098422.4678884,
+      "organism_update_1060": 1754098422.4678884,
+      "organism_update_6624": 1754098422.4678884,
+      "organism_update_6461": 1754098422.4678884,
+      "organism_update_2904": 1754098422.468874,
+      "organism_update_1604": 1754098422.468874,
+      "organism_update_6293": 1754098422.468874,
+      "organism_update_1651": 1754098422.468874,
+      "organism_update_8696": 1754098422.4698734,
+      "organism_update_6797": 1754098422.4698734,
+      "organism_update_3426": 1754098422.4698734,
+      "organism_update_7356": 1754098422.4698734,
+      "organism_update_2024": 1754098422.4698734,
+      "organism_update_4039": 1754098422.4708986,
+      "organism_update_7840": 1754098422.4708986,
+      "organism_update_1143": 1754098422.471438,
+      "organism_update_3069": 1754098422.471438,
+      "organism_update_7651": 1754098422.471438,
+      "organism_update_1251": 1754098422.471438,
+      "organism_update_2312": 1754098422.4724324,
+      "organism_update_7366": 1754098422.4724324,
+      "organism_update_7351": 1754098422.4724324,
+      "organism_update_6601": 1754098422.4724324,
+      "organism_update_8094": 1754098422.4724324,
+      "organism_update_4442": 1754098422.4724324,
+      "organism_update_7714": 1754098422.473953,
+      "organism_update_9968": 1754098422.473953,
+      "organism_update_8093": 1754098422.473953,
+      "organism_update_7204": 1754098422.473953,
+      "organism_update_7234": 1754098422.473953,
+      "organism_update_3931": 1754098422.474984,
+      "organism_update_8883": 1754098422.474984,
+      "organism_update_9724": 1754098422.474984,
+      "organism_update_1923": 1754098422.474984,
+      "organism_update_9157": 1754098422.474984,
+      "organism_update_6894": 1754098422.4761357,
+      "organism_update_8409": 1754098422.4761357,
+      "organism_update_8313": 1754098422.4761357,
+      "organism_update_5964": 1754098422.4761357,
+      "organism_update_9940": 1754098422.4771342,
+      "organism_update_6440": 1754098422.4771342,
+      "organism_update_5069": 1754098422.4771342,
+      "organism_update_2742": 1754098422.4771342,
+      "organism_update_2558": 1754098422.478154,
+      "organism_update_5163": 1754098422.478154,
+      "organism_update_7200": 1754098422.478154,
+      "organism_update_6432": 1754098422.478154,
+      "organism_update_3075": 1754098422.478154,
+      "organism_update_4832": 1754098422.4791346,
+      "organism_update_1421": 1754098422.4791346,
+      "organism_update_8839": 1754098422.4791346,
+      "organism_update_4434": 1754098422.4791346,
+      "organism_update_8613": 1754098422.4791346,
+      "organism_update_8415": 1754098422.4801605,
+      "organism_update_9171": 1754098422.4801605,
+      "organism_update_4217": 1754098422.4801605,
+      "organism_update_5699": 1754098422.4801605,
+      "organism_update_3162": 1754098422.4811509,
+      "organism_update_1514": 1754098422.4811509,
+      "organism_update_2038": 1754098422.481676,
+      "organism_update_1517": 1754098422.481676,
+      "organism_update_9623": 1754098422.481676,
+      "organism_update_2838": 1754098422.481676,
+      "organism_update_8513": 1754098422.481676,
+      "organism_update_2233": 1754098422.481676,
+      "organism_update_1257": 1754098422.48269,
+      "organism_update_7991": 1754098422.48269,
+      "organism_update_4259": 1754098422.48269,
+      "organism_update_7983": 1754098422.48269,
+      "organism_update_1467": 1754098422.4836903,
+      "organism_update_6416": 1754098422.4836903,
+      "organism_update_6869": 1754098422.4836903,
+      "organism_update_5866": 1754098422.4836903,
+      "organism_update_5475": 1754098422.4836903,
+      "organism_update_1549": 1754098422.4836903,
+      "organism_update_4553": 1754098422.4836903,
+      "organism_update_3815": 1754098422.4836903,
+      "organism_update_9324": 1754098422.4852214,
+      "organism_update_3513": 1754098422.4852214,
+      "organism_update_9364": 1754098422.4852214,
+      "organism_update_5769": 1754098422.4852214,
+      "organism_update_1299": 1754098422.4862351,
+      "organism_update_4210": 1754098422.4862351,
+      "organism_update_6552": 1754098422.4862351,
+      "organism_update_1672": 1754098422.4862351,
+      "organism_update_1967": 1754098422.4862351,
+      "organism_update_7441": 1754098422.4872534,
+      "organism_update_1428": 1754098422.4872534,
+      "organism_update_3394": 1754098422.4872534,
+      "organism_update_4316": 1754098422.4872534,
+      "organism_update_1796": 1754098422.4882503,
+      "organism_update_6967": 1754098422.4882503,
+      "organism_update_5383": 1754098422.4882503,
+      "organism_update_5577": 1754098422.4882503,
+      "organism_update_6536": 1754098422.4882503,
+      "organism_update_6508": 1754098422.4882503,
+      "organism_update_6746": 1754098422.4882503,
+      "organism_update_4819": 1754098422.4897618,
+      "foods_update": 1754098422.5056617,
+      "rendering": 1754098422.5056617,
+      "organism_update_8684": 1754098422.46689,
+      "organism_update_5948": 1754098422.4646406,
+      "organism_update_6565": 1754098422.465899,
+      "organism_update_3736": 1754098422.465899,
+      "organism_update_2924": 1754098422.465899,
+      "organism_update_9737": 1754098422.465899,
+      "organism_update_3469": 1754098422.46689,
+      "organism_update_4300": 1754098422.463604,
+      "organism_update_3046": 1754098422.463604,
+      "organism_update_7391": 1754098422.463604,
+      "organism_update_9846": 1754098422.463604,
+      "organism_update_1806": 1754098422.4646406,
+      "organism_update_5966": 1754098422.4646406,
+      "organism_update_8835": 1754098422.4646406,
+      "organism_update_2095": 1754098422.4646406,
+      "organism_update_2210": 1754098422.462073,
+      "organism_update_5796": 1754098422.462073,
+      "organism_update_8730": 1754098422.462073,
+      "organism_update_6783": 1754098422.462073,
+      "organism_update_9796": 1754098422.46106,
+      "organism_update_1427": 1754098422.46106,
+      "organism_update_9853": 1754098422.46106,
+      "organism_update_8504": 1754098422.46106,
+      "organism_update_6084": 1754098422.46106,
+      "organism_update_9457": 1754098422.45954,
+      "organism_update_5908": 1754098422.45954,
+      "organism_update_2115": 1754098422.45954,
+      "organism_update_6145": 1754098422.45954,
+      "organism_update_9769": 1754098422.45954,
+      "organism_update_1364": 1754098422.45954,
+      "organism_update_9684": 1754098422.45954,
+      "organism_update_8562": 1754098422.4585412,
+      "organism_update_3957": 1754098422.4585412,
+      "organism_update_4341": 1754098422.4585412,
+      "organism_update_5237": 1754098422.4585412,
+      "organism_update_7849": 1754098422.4565406,
+      "organism_update_3604": 1754098422.4575675,
+      "organism_update_5075": 1754098422.4575675,
+      "organism_update_6791": 1754098422.4575675,
+      "organism_update_9463": 1754098422.4585412,
+      "organism_update_7598": 1754098422.4565406,
+      "organism_update_6233": 1754098422.4565406,
+      "organism_update_5155": 1754098422.4565406,
+      "organism_update_5739": 1754098422.4555433,
+      "organism_update_1508": 1754098422.4555433,
+      "organism_update_9244": 1754098422.4555433,
+      "organism_update_8154": 1754098422.4555433,
+      "organism_update_9034": 1754098422.4530048,
+      "organism_update_4644": 1754098422.4530048,
+      "organism_update_8939": 1754098422.4530048,
+      "organism_update_1719": 1754098422.4545274,
+      "organism_update_1563": 1754098422.4545274,
+      "organism_update_4224": 1754098422.4530048,
+      "organism_update_8027": 1754098422.4530048,
+      "organism_update_2134": 1754098422.4530048,
+      "organism_update_3563": 1754098422.4509747,
+      "organism_update_6986": 1754098422.4509747,
+      "organism_update_8371": 1754098422.4519863,
+      "organism_update_2034": 1754098422.4519863,
+      "organism_update_7152": 1754098422.4519863,
+      "organism_update_7926": 1754098422.4519863,
+      "organism_update_2880": 1754098422.4504385,
+      "organism_update_4944": 1754098422.4504385,
+      "organism_update_3092": 1754098422.4509747,
+      "organism_update_9214": 1754098422.4509747,
+      "organism_update_8945": 1754098422.4509747,
+      "organism_update_2641": 1754098422.4489734,
+      "organism_update_7115": 1754098422.4489734,
+      "organism_update_9249": 1754098422.4499078,
+      "organism_update_2562": 1754098422.4499078,
+      "organism_update_5690": 1754098422.4504385,
+      "organism_update_5077": 1754098422.447451,
+      "organism_update_5129": 1754098422.447451,
+      "organism_update_3739": 1754098422.448469,
+      "organism_update_6060": 1754098422.447451,
+      "organism_update_2502": 1754098422.447451,
+      "organism_update_4373": 1754098422.444927,
+      "organism_update_1710": 1754098422.444927,
+      "organism_update_9598": 1754098422.4459264,
+      "organism_update_4417": 1754098422.4459264,
+      "organism_update_2704": 1754098422.4459264,
+      "organism_update_9262": 1754098422.4459264,
+      "organism_update_9199": 1754098422.4459264,
+      "organism_update_5635": 1754098422.4459264,
+      "organism_update_9215": 1754098422.4459264,
+      "organism_update_9512": 1754098422.4442928,
+      "organism_update_2774": 1754098422.4442928,
+      "organism_update_6637": 1754098422.444927,
+      "organism_update_6320": 1754098422.444927,
+      "organism_update_8262": 1754098422.4438968,
+      "organism_update_1176": 1754098422.442376,
+      "organism_update_3868": 1754098422.442376,
+      "organism_update_8804": 1754098422.442376,
+      "organism_update_5309": 1754098422.4411962,
+      "organism_update_6412": 1754098422.4411962,
+      "organism_update_4061": 1754098422.4411962,
+      "organism_update_8821": 1754098422.4411962,
+      "organism_update_8441": 1754098422.442376,
+      "organism_update_4374": 1754098422.442376,
+      "organism_update_5291": 1754098422.442376,
+      "organism_update_8626": 1754098422.4402053,
+      "organism_update_2556": 1754098422.4402053,
+      "organism_update_4872": 1754098422.4411962,
+      "organism_update_6933": 1754098422.439205,
+      "organism_update_5005": 1754098422.439205,
+      "organism_update_9327": 1754098422.4402053,
+      "organism_update_2634": 1754098422.4381893,
+      "organism_update_6990": 1754098422.439205,
+      "organism_update_9195": 1754098422.4371898,
+      "organism_update_9383": 1754098422.4381893,
+      "organism_update_9416": 1754098422.4381893,
+      "organism_update_8719": 1754098422.4381893,
+      "organism_update_8253": 1754098422.4381893,
+      "organism_update_7996": 1754098422.4371898,
+      "organism_update_1674": 1754098422.4371898,
+      "organism_update_4390": 1754098422.4371898,
+      "organism_update_8574": 1754098422.4362125,
+      "organism_update_2947": 1754098422.4362125,
+      "organism_update_2892": 1754098422.4362125,
+      "organism_update_2550": 1754098422.4362125,
+      "organism_update_3010": 1754098422.4351907,
+      "organism_update_9422": 1754098422.4351907,
+      "organism_update_8356": 1754098422.4351907,
+      "organism_update_4147": 1754098422.4351907,
+      "organism_update_5210": 1754098422.4362125,
+      "organism_update_7231": 1754098422.4341908,
+      "organism_update_7769": 1754098422.4341908,
+      "organism_update_7917": 1754098422.4341908,
+      "organism_update_7530": 1754098422.4341908,
+      "organism_update_3788": 1754098422.4341908,
+      "organism_update_8752": 1754098422.4331756,
+      "organism_update_5223": 1754098422.4316506,
+      "organism_update_6781": 1754098422.4331756,
+      "organism_update_8876": 1754098422.4331756,
+      "organism_update_4474": 1754098422.4331756,
+      "organism_update_7223": 1754098422.4316506,
+      "organism_update_7260": 1754098422.4316506,
+      "organism_update_7805": 1754098422.4316506,
+      "organism_update_5967": 1754098422.4316506,
+      "organism_update_9972": 1754098422.4316506,
+      "organism_update_4403": 1754098422.4311156,
+      "organism_update_5791": 1754098422.4311156,
+      "organism_update_4295": 1754098422.4316506,
+      "organism_update_4645": 1754098422.4301374,
+      "organism_update_3834": 1754098422.4301374,
+      "organism_update_3910": 1754098422.4301374,
+      "organism_update_7381": 1754098422.4301374,
+      "organism_update_1419": 1754098422.4291425,
+      "organism_update_4353": 1754098422.4291425,
+      "organism_update_3778": 1754098422.4291425,
+      "organism_update_9735": 1754098422.4291425,
+      "organism_update_2407": 1754098422.4281156,
+      "organism_update_3846": 1754098422.4291425,
+      "organism_update_8347": 1754098422.4281156,
+      "organism_update_9978": 1754098422.4281156,
+      "organism_update_4896": 1754098422.4281156,
+      "organism_update_5742": 1754098422.4271095,
+      "organism_update_5524": 1754098422.4271095,
+      "organism_update_5076": 1754098422.4271095,
+      "organism_update_1359": 1754098422.425598,
+      "organism_update_2462": 1754098422.425598,
+      "organism_update_5633": 1754098422.425598,
+      "organism_update_7459": 1754098422.425598,
+      "organism_update_4607": 1754098422.425598,
+      "organism_update_8592": 1754098422.4245982,
+      "organism_update_6046": 1754098422.4245982,
+      "organism_update_8378": 1754098422.4245982,
+      "organism_update_7544": 1754098422.4245982,
+      "organism_update_5365": 1754098422.4245982,
+      "organism_update_3033": 1754098422.4235804,
+      "organism_update_3845": 1754098422.4235804,
+      "organism_update_3455": 1754098422.4225755,
+      "organism_update_1121": 1754098422.4235804,
+      "organism_update_8636": 1754098422.4225755,
+      "organism_update_7876": 1754098422.4225755,
+      "organism_update_3371": 1754098422.4220712,
+      "organism_update_2697": 1754098422.4225755,
+      "organism_update_4416": 1754098422.4220712,
+      "organism_update_4443": 1754098422.4210644,
+      "organism_update_6816": 1754098422.4210644,
+      "organism_update_1839": 1754098422.4210644,
+      "organism_update_9348": 1754098422.4210644,
+      "organism_update_5284": 1754098422.4195578,
+      "organism_update_5225": 1754098422.4195578,
+      "organism_update_9433": 1754098422.4195578,
+      "organism_update_3271": 1754098422.4195578,
+      "organism_update_2745": 1754098422.4185765,
+      "organism_update_3087": 1754098422.4175897,
+      "organism_update_1635": 1754098422.4185765,
+      "organism_update_3458": 1754098422.4185765,
+      "organism_update_4947": 1754098422.4185765,
+      "organism_update_9452": 1754098422.4175897,
+      "organism_update_4640": 1754098422.4175897,
+      "organism_update_3574": 1754098422.4165554,
+      "organism_update_8985": 1754098422.4165554,
+      "organism_update_1246": 1754098422.4165554,
+      "organism_update_5387": 1754098422.4155598,
+      "organism_update_6018": 1754098422.4155598,
+      "organism_update_9338": 1754098422.4155598,
+      "organism_update_2220": 1754098422.4155598,
+      "organism_update_2992": 1754098422.4145598,
+      "organism_update_8748": 1754098422.4145598
+    },
+    "counters": {}
+  }
+}
